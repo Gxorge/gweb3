@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+$primary: #821a1b;
+
+$footer-background-color: hsl(0, 0%, 21%);
+$link: #ffffff;
+
+.gweb-site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.gweb-content {
+	flex: 1;
+	min-height: calc(100vh - 15px - 100px);
+}
+
+.gweb-text-layout {
+	padding: 1rem;
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.content p {
+	font-size: 20px;
+}
+
+.gweb-footer {
+	height: 100px;
+	background-color: $footer-background-color;
+}
+
+@media (min-width: 1000px) {
+	.footer-sticky {
+		width: 100%;
+		bottom: 0;
+		overflow:hidden;
+	}
+}
+
+.footer-text {
+	color: white;
+	font-size: 15px;
+}
+
+.gweb-link-white {
+	:link {
+		color: #ffffff;
+		text-decoration: underline;
+	}
+	:hover {
+		color: #ffffff;
+		text-decoration-color: gray;
+		text-decoration-style:wavy;
+	}
+}
+
+.gweb-link-black {
+	:any-link {
+		color: #000000;
+		text-decoration: underline;
+	}
+	:hover {
+		color: #000000;
+		text-decoration-color: grey;
+		text-decoration-style:wavy;
+	}
+}
+
+.gweb-link-grey {
+	:any-link {
+		color: hsl(0deg, 0%, 21%);
+		text-decoration: underline;
+	}
+	:hover {
+		color: hsl(0deg, 0%, 21%);
+		text-decoration-color: grey;
+		text-decoration-style:wavy;
+	}
+}
+
+.hero-title-padding {
+    padding-left: 20px;
+    box-decoration-break: clone;
+}
+
+.hero-subtitle-padding {
+    padding-left: 43px;
+    box-decoration-break: clone;
+}
+
+.hero-text-padding {
+	padding-left: calc((100vw - 1920px) / 2 + 300px);
+}
+
+@import '../node_modules/bulma/bulma.sass';
