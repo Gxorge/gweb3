@@ -1,4 +1,6 @@
 <script lang="ts">
+    import '$lib/HeroTitle.scss';
+
     export let title: string;
     export let subtitle: string = "";
     export let colour: string = "";
@@ -17,21 +19,3 @@
         {/if}
     </div>
 </section>
-
-
-<style lang="scss">
-    // Makes the text break properly when the screen size is smol, credit to thomas
-    p.title, p.subtitle {
-        display: flex;
-        align-items: flex-start;
-      }
-
-      p.title b, p.subtitle b {
-        margin-right: 1rem;
-        text-align: right;
-      }
-
-      p.title span, p.subtitle span {
-        flex: 1;
-      }
-</style>
