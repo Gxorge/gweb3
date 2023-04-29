@@ -28,10 +28,6 @@
 </footer>
 
 <style lang="scss">
-    .navbar-brand {
-        color: white;
-    }
-
     .navbar {
         min-height: unset;
         height: 15px;
