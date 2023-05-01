@@ -1,17 +1,10 @@
 <script lang="ts">
     import '../app.scss';
-    import { page } from '$app/stores';
-
-    let mobileMenuActive = false;
 </script>
 
-<nav class="navbar is-dark gweb-link-white" aria-label="main navigation">
-    {#if $page.url.pathname != "/"}
-        <p style="font-size: 10px;"><a href="/">&lt home</a></p>
-    {/if}
-</nav>
+<div class="gweb-banner"/>
 
-<main class="gweb-content">
+<main class="gweb-container">
     <slot />
 </main>
 
@@ -26,10 +19,3 @@
         </p>
     </div>
 </footer>
-
-<style lang="scss">
-    .navbar {
-        min-height: unset;
-        height: 15px;
-    }
-</style>

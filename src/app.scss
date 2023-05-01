@@ -5,16 +5,20 @@ $primary: #821a1b;
 $footer-background-color: hsl(0, 0%, 21%);
 $link: #ffffff;
 
+@import '$lib/bulma/bulma.sass';
+
 .gweb-site {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
 }
 
-.gweb-content {
+.gweb-container {
 	flex: 1;
 	min-height: calc(100vh - 15px - 100px);
 }
+
+// Content
 
 .gweb-text-layout {
 	padding: 1rem;
@@ -24,8 +28,34 @@ $link: #ffffff;
 	box-sizing: border-box;
 }
 
+.gweb-text-layout h1::before {
+	content: '// ';
+    font-weight: bold;
+    font-weight: 700;
+}
+
+.gweb-text-layout h1 {
+	margin-top: 0.5em;
+}
+
+.gweb-text-layout h2::before {
+	content: '/ ';
+    font-weight: bold;
+    font-weight: 700;
+}
+
+.gweb-text-layout h2 {
+	font-size: 1.5em;
+}
+
 .content p {
 	font-size: 20px;
+}
+
+.gweb-banner {
+	min-height: unset;
+	height: 15px;
+	background-color: #363636
 }
 
 .gweb-footer {
@@ -81,19 +111,3 @@ $link: #ffffff;
 		text-decoration-style:wavy;
 	}
 }
-
-.hero-title-padding {
-    padding-left: 20px;
-    box-decoration-break: clone;
-}
-
-.hero-subtitle-padding {
-    padding-left: 43px;
-    box-decoration-break: clone;
-}
-
-.hero-text-padding {
-	padding-left: calc((100vw - 1920px) / 2 + 300px);
-}
-
-@import '../node_modules/bulma/bulma.sass';

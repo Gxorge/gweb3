@@ -1,5 +1,6 @@
 <script lang="ts">
     import HeroTitle from '$lib/HeroTitle.svelte';
+    import BackBreadcrum from '$lib/BackBreadcrum.svelte';
 </script>    
 
 <svelte:head>
@@ -7,11 +8,17 @@
 </svelte:head>
 
 <HeroTitle title="gweb v3.5" subtitle="Web design for Hotten.UK"/>
-<section class="gweb-text-layout">
-    <div class="content">
-        <h1><b>/</b> Title</h1>
+<section class="content">
+    <div class="gweb-text-layout">
+        <BackBreadcrum/>
+        <h1>H1</h1>
         <p>
-            gweb v3.5 layout moments.
+            Example H1.
+        </p>
+
+        <h2>H2</h2>
+        <p>
+            Example H2.
         </p>
     </div>
 </section>

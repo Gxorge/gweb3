@@ -1,14 +1,33 @@
-// Makes the text break properly when the screen size is smol, credit to thomas
-p.title, p.subtitle {
-    display: flex;
-    align-items: flex-start;
+.hero-text-padding {
+	padding-left: calc((100vw - 1920px) / 2 + 300px);
 }
 
-p.title b, p.subtitle b {
-    margin-right: 1rem;
-    text-align: right;
+.title::before {
+    content: '// ';
+    font-weight: bold;
+    font-weight: 700;
+
+    margin-left: -55px;
+    position: absolute;
 }
 
-p.title span, p.subtitle span {
-    flex: 1;
+.title {
+    margin-left: 70px;
+    position: relative;
+    box-decoration-break: clone;
+}
+
+.subtitle::before {
+    content: '/ ';
+    font-weight: bold;
+    font-weight: 700;
+
+    margin-left: -55px;
+    position: absolute;
+}
+
+.subtitle {
+    margin-left: 70px;
+    position: relative;
+    box-decoration-break: clone;
 }
