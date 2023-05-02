@@ -5,14 +5,14 @@
 .title::before {
     content: '// ';
     font-weight: bold;
-    font-weight: 700;
+    font-weight: 800;
 
     margin-left: -55px;
     position: absolute;
 }
 
 .title {
-    margin-left: 70px;
+    margin-left: 110px;
     position: relative;
     box-decoration-break: clone;
 }
@@ -27,7 +27,7 @@
 }
 
 .subtitle {
-    margin-left: 70px;
+    margin-left: 110px;
     position: relative;
     box-decoration-break: clone;
 }

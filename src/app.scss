@@ -5,7 +5,7 @@ $primary: #821a1b;
 $footer-background-color: hsl(0, 0%, 21%);
 $link: #ffffff;
 
-@import '$lib/bulma/bulma.sass';
+@import '../node_modules/gweb-bulma/bulma.sass';
 
 .gweb-site {
 	display: flex;
