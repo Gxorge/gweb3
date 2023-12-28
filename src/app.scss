@@ -3,6 +3,7 @@
 $primary: #821a1b;
 
 $footer-background-color: hsl(0, 0%, 21%);
+$dark-footer-background-color: hsl(0, 0%, 31%);
 $link: #ffffff;
 
 @import '../node_modules/gweb-bulma/bulma.sass';
@@ -109,5 +110,119 @@ $link: #ffffff;
 		color: hsl(0deg, 0%, 21%);
 		text-decoration-color: grey;
 		text-decoration-style:wavy;
+	}
+}
+
+@media(prefers-color-scheme: dark) {
+	.gweb-site {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+		background-color: #363636;
+	}
+	
+	.gweb-container {
+		flex: 1;
+		min-height: calc(100vh - 15px - 100px);
+	}
+	
+	// Content
+	
+	.gweb-text-layout {
+		padding: 1rem;
+		width: 100%;
+		max-width: 1140px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		color: white;
+	}
+	
+	.gweb-text-layout h1::before {
+		content: '// ';
+		font-weight: bold;
+		font-weight: 700;
+		color: white;
+	}
+	
+	.gweb-text-layout h1 {
+		margin-top: 0.5em;
+		color: white;
+	}
+	
+	.gweb-text-layout h2::before {
+		content: '/ ';
+		font-weight: bold;
+		font-weight: 700;
+		color: white;
+	}
+	
+	.gweb-text-layout h2 {
+		font-size: 1.5em;
+		color: white;
+	}
+	
+	.content p {
+		font-size: 20px;
+		color: white;
+	}
+
+	.gweb-banner {
+		min-height: unset;
+		height: 15px;
+		background-color: $dark-footer-background-color
+	}
+
+	.gweb-footer {
+		height: 100px;
+		background-color: $dark-footer-background-color;
+	}
+
+	@media (min-width: 1000px) {
+		.footer-sticky {
+			width: 100%;
+			bottom: 0;
+			overflow:hidden;
+		}
+	}
+
+	.footer-text {
+		color: black;
+		font-size: 15px;
+	}
+
+	.gweb-link-white {
+		:link {
+			color: #ffffff;
+			text-decoration: underline;
+		}
+		:hover {
+			color: #ffffff;
+			text-decoration-color: gray;
+			text-decoration-style:wavy;
+		}
+	}
+
+	.gweb-link-black {
+		:any-link {
+			color: #ffffff;
+			text-decoration: underline;
+		}
+		:hover {
+			color: #ffffff;
+			text-decoration-color: grey;
+			text-decoration-style:wavy;
+		}
+	}
+
+	.gweb-link-grey {
+		:any-link {
+			color: hsl(0, 0%, 81%);
+			text-decoration: underline;
+		}
+		:hover {
+			color: hsl(0, 0%, 81%);
+			text-decoration-color: grey;
+			text-decoration-style:wavy;
+		}
 	}
 }
