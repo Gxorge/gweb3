@@ -77,6 +77,37 @@ $link: #ffffff;
 	font-size: 15px;
 }
 
+.footer-colours {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	width: 100%;
+	margin: 0px !important;
+}
+
+.footer-colour {
+	height: 20px;
+	width: 100%;
+	clear: both;
+}
+
+#hotten {
+	background-color: #0ba596;
+}
+
+#george {
+	background-color: #821a1b;
+}
+
+#solihull {
+	background-color: #233f56;
+}
+
+#aston {
+	background-color: #600064;
+}
+
 .gweb-link-white {
 	:link {
 		color: #ffffff;
