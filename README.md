@@ -1,2 +1,3 @@
-# gweb v3.5
-gweb is used for my personal website and the hotten.uk website. the design is interesting and has been improved apon since gweb v3. yay
+# gweb v3.7
+my website aesthetic
+![Screenshot of boilerplate gweb3.7](img/threepointseven.png)
