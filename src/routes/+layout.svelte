@@ -2,8 +2,6 @@
     import '../app.scss';
 </script>
 
-<div class="gweb-banner"/>
-
 <main class="gweb-container">
     <slot />
 </main>

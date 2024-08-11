@@ -3,7 +3,11 @@
 $primary: #821a1b;
 
 $footer-background-color: hsl(0, 0%, 21%);
-$dark-footer-background-color: hsl(0, 0%, 31%);
+
+$dark-background-color: hsl(359, 12%, 8%);
+$dark-footer-background-color: hsl(359, 15%, 20%);
+$dark-text-color: hsl(359, 15%, 87%);
+$dark-grey-text-color: hsl(359, 50%, 87%);
 $link: #ffffff;
 
 @import '../node_modules/gweb-bulma/bulma.sass';
@@ -16,7 +20,7 @@ $link: #ffffff;
 
 .gweb-container {
 	flex: 1;
-	min-height: calc(100vh - 15px - 100px);
+	min-height: calc(100vh - 100px);
 }
 
 // Content
@@ -49,14 +53,8 @@ $link: #ffffff;
 	font-size: 1.5em;
 }
 
-.content p {
+.content p, .content ul {
 	font-size: 20px;
-}
-
-.gweb-banner {
-	min-height: unset;
-	height: 15px;
-	background-color: #363636
 }
 
 .gweb-footer {
@@ -149,12 +147,12 @@ $link: #ffffff;
 		display: flex;
 		min-height: 100vh;
 		flex-direction: column;
-		background-color: #363636;
+		background-color: $dark-background-color;
 	}
 	
 	.gweb-container {
 		flex: 1;
-		min-height: calc(100vh - 15px - 100px);
+		min-height: calc(100vh - 100px);
 	}
 	
 	// Content
@@ -165,42 +163,36 @@ $link: #ffffff;
 		max-width: 1140px;
 		margin: 0 auto;
 		box-sizing: border-box;
-		color: white;
+		color: $dark-text-color;
 	}
 	
 	.gweb-text-layout h1::before {
 		content: '// ';
 		font-weight: bold;
 		font-weight: 700;
-		color: white;
+		color: $dark-text-color;
 	}
 	
 	.gweb-text-layout h1 {
 		margin-top: 0.5em;
-		color: white;
+		color: $dark-text-color;
 	}
 	
 	.gweb-text-layout h2::before {
 		content: '/ ';
 		font-weight: bold;
 		font-weight: 700;
-		color: white;
+		color: $dark-text-color;
 	}
 	
 	.gweb-text-layout h2 {
 		font-size: 1.5em;
-		color: white;
+		color: $dark-text-color;
 	}
 	
 	.content p {
 		font-size: 20px;
-		color: white;
-	}
-
-	.gweb-banner {
-		min-height: unset;
-		height: 15px;
-		background-color: $dark-footer-background-color
+		color: $dark-text-color;
 	}
 
 	.gweb-footer {
@@ -223,11 +215,11 @@ $link: #ffffff;
 
 	.gweb-link-white {
 		:link {
-			color: #ffffff;
+			color: $dark-text-color;
 			text-decoration: underline;
 		}
 		:hover {
-			color: #ffffff;
+			color: $dark-text-color;
 			text-decoration-color: gray;
 			text-decoration-style:wavy;
 		}
@@ -235,11 +227,11 @@ $link: #ffffff;
 
 	.gweb-link-black {
 		:any-link {
-			color: #ffffff;
+			color: $dark-text-color;
 			text-decoration: underline;
 		}
 		:hover {
-			color: #ffffff;
+			color: $dark-text-color;
 			text-decoration-color: grey;
 			text-decoration-style:wavy;
 		}
@@ -247,11 +239,11 @@ $link: #ffffff;
 
 	.gweb-link-grey {
 		:any-link {
-			color: hsl(0, 0%, 81%);
+			color: $dark-grey-text-color;
 			text-decoration: underline;
 		}
 		:hover {
-			color: hsl(0, 0%, 81%);
+			color: $dark-grey-text-color;
 			text-decoration-color: grey;
 			text-decoration-style:wavy;
 		}
