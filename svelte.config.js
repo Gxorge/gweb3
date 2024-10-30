@@ -1,19 +1,17 @@
-import adapter from '@sveltejs/adapter-vercel'
-import svpp from 'svelte-preprocess';
+import adapter from '@sveltejs/adapter-node'
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter({
-			edge: false
-		}),
+		adapter: adapter(),
 		files: {
 			lib: "src/lib",
 			assets: "src/assets"
 		}
 	},
 
-	preprocess: svpp()
+	preprocess: [vitePreprocess()]
 };
 
 export default config;

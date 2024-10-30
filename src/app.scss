@@ -1,13 +1,13 @@
 @charset "utf-8";
 
-$primary: #821a1b;
+$primary: #0ba596;
 
 $footer-background-color: hsl(0, 0%, 21%);
 
-$dark-background-color: hsl(359, 12%, 8%);
-$dark-footer-background-color: hsl(359, 15%, 20%);
-$dark-text-color: hsl(359, 15%, 87%);
-$dark-grey-text-color: hsl(359, 50%, 87%);
+$dark-background-color: hsl(174, 12%, 8%);
+$dark-footer-background-color: hsl(174, 15%, 20%);
+$dark-text-color: hsl(174, 15%, 87%);
+$dark-grey-text-color: hsl(174, 50%, 87%);
 $link: #ffffff;
 
 @import '../node_modules/gweb-bulma/bulma.sass';
