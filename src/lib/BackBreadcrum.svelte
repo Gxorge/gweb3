@@ -1,5 +1,5 @@
 <script lang="ts">
-    import '../app.scss';
+    import '../gweb.scss';
     import { page } from '$app/stores';
 </script>
 

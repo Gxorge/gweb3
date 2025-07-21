@@ -9,11 +9,11 @@
 
 <header class="hero {colour == "" ? "is-primary" : ""}" style={colour == "" ? "" : "background-color: " + colour}>
     <div class="hero-body hero-text-padding">
-        <h1 class="title" style={text_colour == "" ? "" : "color: " + text_colour}>
+        <h1 class="title has-text-white" style={text_colour == "" ? "" : "color: " + text_colour}>
             {title}
         </h1>
         {#if subtitle != ""}
-            <h2 role="doc-subtitle" class="subtitle" style={text_colour == "" ? "" : "color: " + text_colour}>
+            <h2 role="doc-subtitle" class="subtitle has-text-white" style={text_colour == "" ? "" : "color: " + text_colour}>
                 {subtitle}
             </h2>
         {/if}

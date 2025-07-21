@@ -15,6 +15,7 @@
     margin-left: 110px;
     position: relative;
     box-decoration-break: clone;
+    font-weight: 600;
 }
 
 .subtitle::before {
@@ -30,4 +31,5 @@
     margin-left: 110px;
     position: relative;
     box-decoration-break: clone;
+    font-weight: normal;
 }

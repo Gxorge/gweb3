@@ -1,20 +1,14 @@
 @charset "utf-8";
 
-$footer-background-color: hsl(0, 0%, 21%);
+@forward "_variables";
+@forward "_bulma";
 
-$dark-background-color: hsl(174, 12%, 8%);
-$dark-footer-background-color: hsl(174, 15%, 20%);
-$dark-text-color: hsl(174, 15%, 87%);
-$dark-grey-text-color: hsl(174, 50%, 87%);
-
-@use "gweb-bulma/sass" with (
-	$primary: #0ba596,
-	$link: #ffffff,
-);
+@use "_variables" as *;
 
 :root {
 	$title-color: #ffffff;
 	$subtitle-color: #ffffff;
+	--bulma-link-text: $glink;
 }
 
 .gweb-site {

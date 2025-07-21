@@ -1,0 +1,13 @@
+@use 'sass:color';
+
+$theme: #4992d9 !default;
+$theme-hue: color.channel($theme, "hue", $space: hsl);
+$footer-background-color: hsl(0, 0%, 21%);
+
+$dark-background-color: hsl($theme-hue, 12%, 8%);
+$dark-footer-background-color: hsl($theme-hue, 15%, 20%);
+$dark-text-color: hsl($theme-hue, 15%, 87%);
+$dark-grey-text-color: hsl($theme-hue, 50%, 87%);
+
+$primary: $theme !default;
+$glink: #ffffff !default;
