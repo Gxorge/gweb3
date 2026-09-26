@@ -13,6 +13,7 @@ gweb is a package that sites install, so styling updates reach every site throug
 | --- | --- |
 | `@gxorge/gweb/styles` | Global styles: Bulma plus the gweb layout, headings, links, footer and dark mode |
 | `HeroTitle` | Page header. Props: `title`, `subtitle`, `colour`, `text_colour` |
+| `@gxorge/gweb/HeroTitle.scss` | The header styles on their own, for pages that write their own `<header class="hero">` markup |
 | `BackBreadcrum` | "< home" / "< back" link. Props: `sections`, `linkClass` |
 | `Footer` | Footer with the colour strip. Prop: `copyright`; links go in the slot |
 

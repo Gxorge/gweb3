@@ -21,7 +21,8 @@
 			"types": "./dist/index.d.ts",
 			"svelte": "./dist/index.js"
 		},
-		"./styles": "./dist/styles/gweb.scss"
+		"./styles": "./dist/styles/gweb.scss",
+		"./HeroTitle.scss": "./dist/HeroTitle.scss"
 	},
 	"sideEffects": [
 		"**/*.css",
